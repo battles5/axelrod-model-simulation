@@ -1,22 +1,22 @@
 import numpy as np
-import matplotlib.pyplot as plt
+from multiprocessing import Pool
 from tqdm import tqdm
-from multiprocessing import Pool, freeze_support
-from simulation_module import single_q_simulation
+from simulation_module import simulate
 
-if __name__ == '__main__':
-    freeze_support()
+L = 100
+F = 10
+steps = 100000000
 
-    num_cores = 4
-    q_values = range(10, 401, 10)
+def simulation_wrapper(q):
+    global L, F, steps
+    return simulate(L, F, q, steps)
 
-    with Pool(num_cores) as p:
-        results = list(tqdm(p.imap(single_q_simulation, q_values), total=len(q_values)))
+if __name__ == "__main__":
+    q_values = np.linspace(10, 400, 40, dtype=int)
 
-    plt.figure(figsize=(10, 6))
-    plt.plot(q_values, results, '-o')
-    plt.xlabel('q')
-    plt.ylabel('$S_{max}/L$')
-    plt.title('$S_{max}/L$ vs q')
-    plt.grid(True)
-    plt.show()
+    # Usando solo 6 core
+    with Pool(processes=6) as pool:
+        results = list(tqdm(pool.imap(simulation_wrapper, q_values), total=len(q_values)))
+
+    for q, result in zip(q_values, results):
+        print(f"q = {q}, Smax/L = {result}")
