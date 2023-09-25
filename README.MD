@@ -21,7 +21,8 @@ The goal of the presented work is rooted in the interdisciplinary domain of comp
 
 ## Results and Graphs
 Upon successful execution of `main_script.py`, a graph depicting the relationship between parameter $$ q $$ and normalized the largest domain size
-$$ \frac{S_{max}}{L^2} $$ will be displayed. Additionally, the data will be exported to `graph_data.csv` for further analysis.
+![Formula](https://latex.codecogs.com/svg.image?%5Cfrac%7BS_%7Bmax%7D%7D%7BL%5E2%7D)
+ will be displayed. Additionally, the data will be exported to `graph_data.csv` for further analysis.
 
 ## Model Variations
 This implementation of the Axelrod Model introduces two variations:
