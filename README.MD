@@ -20,7 +20,8 @@ The goal of the presented work is rooted in the interdisciplinary domain of comp
 3. Run `main_script.py` to initiate the simulations and generate the results.
 
 ## Results and Graphs
-Upon successful execution of `main_script.py`, a graph depicting the relationship between parameter \(q\) and normalized largest domain size \(\frac{Smax}{L}\) will be displayed. Additionally, the data will be exported to `graph_data.csv` for further analysis.
+Upon successful execution of `main_script.py`, a graph depicting the relationship between parameter ![q](readme_img/q.png) and normalized the largest domain size
+![smaxl](readme_img/smax_l2.png) will be displayed. Additionally, the data will be exported to `graph_data.csv` for further analysis.
 
 ## Model Variations
 This implementation of the Axelrod Model introduces two variations:
