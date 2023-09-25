@@ -24,6 +24,9 @@ The initial stage implies that interactions predominantly occur in close proximi
 
 For determining the interaction probability in the second stage, the model emphasizes the principle of homophily: agents with greater cultural similarities are more inclined to interact. This suggests that the likelihood of interaction should correlate with the shared cultural features between the two agents.
 
+## Prerequisites
+
+To run the code, you must have Python installed, preferably version 3.10 or higher.
 
 ## Dependencies
 - `numpy`: For numerical operations and matrix manipulations.
@@ -32,9 +35,9 @@ For determining the interaction probability in the second stage, the model empha
 - `plotly.graph_objects`: For visualizing the results of the simulations.
 
 ## Code Structure
-- `simulation_module.py`: Contains the main Axelrod Model simulation class and related functions.
-- `config.txt`: Provides the configuration parameters for the simulation.
-- `main_script.py`: The main script that reads configurations, runs simulations, and visualizes the results.
+- `multiprocessing\simulation_module.py`: Contains the main Axelrod Model simulation class and related functions.
+- `multiprocessing\config.txt`: Provides the configuration parameters for the simulation.
+- `multiprocessing\main_script.py`: The main script that reads configurations, runs simulations, and visualizes the results.
 
 ## Instructions for Use
 1. Ensure all the dependencies are installed.
