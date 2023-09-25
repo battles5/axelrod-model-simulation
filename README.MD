@@ -27,3 +27,38 @@ Upon successful execution of `main_script.py`, a graph depicting the relationshi
 This implementation of the Axelrod Model introduces two variations:
 - **Noise**: A certain level of randomness or unpredictability introduced into the model.
 - **Media Influence**: The impact of external media sources on the cultural diffusion process.
+
+## Analysis using the Axelrod Media Noise Notebook
+
+This section provides an overview of the analysis performed using the `axelrod_media_noise.ipynb` notebook.
+
+### Dependencies
+- `numpy`: For numerical operations and array manipulations.
+- `matplotlib.pyplot`: For plotting the results and visualizations.
+- `tqdm`: To display progress bars during the simulations.
+
+### Model Parameters
+The notebook explores the Axelrod Model of Cultural Diffusion using the following parameters:
+- Grid size: `{grid_size}`
+- Number of cultural features, F: `{F}`
+- Number of traits per feature, q: `{q}`
+- Noise: `{noise}`
+- Media influence: `{media}`
+
+### Simulation Functions
+Several functions are defined to simulate the cultural diffusion process:
+- Basic simulation step without any variations.
+- Simulation step with noise.
+- Simulation step with media influence.
+- Simulation step incorporating both noise and media influence.
+
+### Results
+Four different simulations are executed to understand the model's behavior:
+1. Basic simulation without any variations.
+2. Simulation incorporating noise.
+3. Simulation with media influence.
+4. Simulation with both noise and media influence.
+
+Each simulation presents the initial and final state of the culture grid along with the evolution of the normalized size of the largest cultural domain and the number of unique cultures over time.
+""".format(grid_size="50", F="3", q="10", noise="0.01", media="0.01")
+
