@@ -20,7 +20,7 @@ The goal of the presented work is rooted in the interdisciplinary domain of comp
 3. Run `main_script.py` to initiate the simulations and generate the results.
 
 ## Results and Graphs
-Upon successful execution of `main_script.py`, a graph depicting the relationship between parameter $$ q $$ and normalized the largest domain size
+Upon successful execution of `main_script.py`, a graph depicting the relationship between parameter ![Formula2](https://latex.codecogs.com/svg.image?q) and normalized the largest domain size
 ![Formula](https://latex.codecogs.com/svg.image?%5Cfrac%7BS_%7Bmax%7D%7D%7BL%5E2%7D)
  will be displayed. Additionally, the data will be exported to `graph_data.csv` for further analysis.
 
@@ -61,5 +61,4 @@ Four different simulations are executed to understand the model's behavior:
 4. Simulation with both noise and media influence.
 
 Each simulation presents the initial and final state of the culture grid along with the evolution of the normalized size of the largest cultural domain and the number of unique cultures over time.
-""".format(grid_size="50", F="3", q="10", noise="0.01", media="0.01")
 
