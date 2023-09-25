@@ -83,3 +83,9 @@ Four different simulations are executed to understand the model's behavior:
 
 Each simulation presents the initial and final state of the culture grid along with the evolution of the normalized size of the largest cultural domain and the number of unique cultures over time.
 
+## References
+
+- Axelrod R., *The dissemination of culture*, JCR, 1997. \[1\]
+- Lanchier N., *The Axelrod model for the dissemination of culture revisited*, The Annals of Applied Probability, 2012. \[2\]
+- Castellano C., Marsili M., Vespignani A., *Nonequilibrium Phase Transition in a Model for Social Influence*, Physical Review Letters, 2000. \[3\]
+- Flache A., *Between Monoculture and Cultural Polarization: Agent-based Models of Interplay of Social Influence and Cultural Diversity*, Journal of Archaeological Method and Theory, 2018. \[4\]
