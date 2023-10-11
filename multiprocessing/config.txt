@@ -1,6 +1,6 @@
 L = 50
 F = 10
 q_start = 10
-q_end = 1001
-q_step = 195
+q_end = 801
+q_step = 39
 steps = 80000000
