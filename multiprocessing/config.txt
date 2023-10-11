@@ -2,5 +2,6 @@ L = 50
 F = 10
 q_start = 10
 q_end = 801
-q_step = 39
+q_step = 78
 steps = 80000000
+num_cycles = 5
