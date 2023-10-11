@@ -3,5 +3,5 @@ F = 10
 q_start = 10
 q_end = 801
 q_step = 156
-steps = 80000
+steps = 80000000
 num_cycles = 5
